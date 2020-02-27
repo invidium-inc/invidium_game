@@ -14,6 +14,6 @@ public class playerMovements : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
-        rb.AddForce(direction);
+        transform.Translate(direction * Time.fixedDeltaTime);
     }
 }
